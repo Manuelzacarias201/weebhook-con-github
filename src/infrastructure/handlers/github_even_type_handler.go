@@ -15,6 +15,7 @@ func handleGithubPingEvent(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, gin.H{"status": "Ping recibido"})
 }
 
+// xd
 func handleGithubPullRequestEvent(ctx *gin.Context, payload []byte) {
 	var eventPayload domain.PullRequestEventPayload
 	if err := json.Unmarshal(payload, &eventPayload); err != nil {
