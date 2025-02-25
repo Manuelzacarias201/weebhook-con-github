@@ -22,7 +22,7 @@ type Branch struct {
 }
 
 type Base struct {
-	Ref string `json:"ref"` // Rama base del Pull Request (ej: develop, main)
+	Ref string `json:"ref"` // Rama base del Pull Request (ej: develop, main) //pull
 	Sha string `json:"sha"`
 }
 
